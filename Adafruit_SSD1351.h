@@ -33,9 +33,9 @@
     typedef volatile RwReg PortReg;
     typedef uint32_t PortMask;
 //couldn't get EP8266 to work for some reason.  R.Lesniak
-//#elif defined (ESP8266)
-//    typedef volatile uint32_t PortReg;
-//    typedef uint32_t PortMask;
+#elif defined (ESP8266)
+    typedef volatile uint32_t PortReg;
+    typedef uint32_t PortMask;
 #else
     typedef volatile uint8_t PortReg;
     typedef uint8_t PortMask;

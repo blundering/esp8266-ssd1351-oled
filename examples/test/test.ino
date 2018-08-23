@@ -25,11 +25,16 @@
  ****************************************************/
 
 // You can use any (4 or) 5 pins 
-#define sclk 2
-#define mosi 3
-#define dc   4
-#define cs   5
-#define rst  6
+// #define sclk 2
+// #define mosi 3
+// #define dc   4
+// #define cs   5
+// #define rst  6
+#define sclk D5
+#define mosi D7
+#define cs   D8
+#define dc   D2
+#define rst  D1
 
 // Color definitions
 #define	BLACK           0x0000
@@ -108,7 +113,7 @@ void setup(void) {
   delay(500);
 
   // line draw test
-  testlines(YELLOW);
+  // testlines(YELLOW);
   delay(500);    
  
   // optimized lines
@@ -119,7 +124,7 @@ void setup(void) {
   testdrawrects(GREEN);
   delay(1000);
 
-  testfillrects(YELLOW, MAGENTA);
+  // testfillrects(YELLOW, MAGENTA);
   delay(1000);
 
   tft.fillScreen(BLACK);
